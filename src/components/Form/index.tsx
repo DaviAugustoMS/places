@@ -22,7 +22,6 @@ const Form = ({ countries, state, handleSubmit }: IFormProps) => {
         <InputComponent
           label="Local"
           placeholder="Digite o local que deseja conhecer"
-          width="405px"
           value={state.value.local}
           textLabel="local"
           state={state.value}

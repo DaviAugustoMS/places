@@ -11,6 +11,10 @@ export const CardContainer = styled.div`
   margin-right: 15px;
   position: relative;
   background: #fff;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+  }
 `;
 
 export const CardContentTop = styled.div`
@@ -48,6 +52,7 @@ export const CardButton = styled.button`
   border: 0;
   background: transparent;
   margin-left: 10px;
+  cursor: pointer;
 `;
 
 export const CardContentBottom = styled.div`

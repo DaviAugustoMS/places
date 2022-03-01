@@ -2,11 +2,19 @@ import styled from "styled-components";
 
 export const FormContainer = styled.section`
   width: 100%;
-  height: 203px;
+  height: 203px;c
   display: flex;
   justify-content: center;
   align-items: center;
   background: #4f9419;
+
+  @media (max-width: 768px) {
+    height: 363px;
+    justify-content: center;
+  align-items: center;
+  display: flex;
+
+  }
 `;
 
 export const FormContent = styled.div`
@@ -15,4 +23,11 @@ export const FormContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 303px;
+    width: 90%;
+  }
 `;

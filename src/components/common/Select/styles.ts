@@ -7,6 +7,7 @@ interface IProps {
 export const SelectContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 90%;
 `;
 
 export const SelectLabel = styled.label`
@@ -22,6 +23,10 @@ export const SelectContent = styled.div`
   border-radius: 7px;
   padding: 0 16px;
   background: #ffffff;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Select = styled.select<IProps>`
   width: 263px;
@@ -33,6 +38,9 @@ export const Select = styled.select<IProps>`
   background: url(${myImage}) no-repeat center right #fff;
   outline: none;
   color: ${({ color }) => color};
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const SelectOption = styled.option``;

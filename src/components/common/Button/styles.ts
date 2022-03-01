@@ -8,6 +8,10 @@ export const ButtonContainer = styled.button`
   border: none;
   border-radius: 7px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const ButtonText = styled.span`

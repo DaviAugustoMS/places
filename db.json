@@ -1,20 +1,12 @@
 {
   "places": [
     {
-      "country": "CM",
-      "local": "losangeles",
-      "meta": "23/2045",
-      "flag": "https://flagcdn.com/cm.svg",
-      "name": "Cameroon",
+      "country": "AX",
+      "local": "aSAsaSasa",
+      "meta": "12/3123",
+      "flag": "https://flagcdn.com/ax.svg",
+      "name": "Åland Islands",
       "id": 1
-    },
-    {
-      "country": "AL",
-      "local": "bahams las",
-      "meta": "33/4423",
-      "flag": "https://flagcdn.com/al.svg",
-      "name": "Albania",
-      "id": 2
     }
   ]
 }

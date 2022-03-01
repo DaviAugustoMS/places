@@ -8,6 +8,7 @@ interface IInputProps {
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 90%;
 `;
 
 export const InputLabel = styled.label`
@@ -17,21 +18,29 @@ export const InputLabel = styled.label`
   color: #ffffff;
 `;
 
-export const Input = styled.input<IInputProps>`
-  width: ${({ width }) => width || "150px"};
+export const Input = styled.input`
+  width: 405px;
   height: 48px;
   border: none;
   border-radius: 7px;
   padding: 0 16px;
   outline: none;
   text-transform: capitalize;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
-export const MaskInput = styled(InputMask)<IInputProps>`
-  width: ${({ width }) => width || "150px"};
+export const MaskInput = styled(InputMask)`
+  width: 150px;
   height: 48px;
   border: none;
   border-radius: 7px;
   padding: 0 16px;
   outline: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;

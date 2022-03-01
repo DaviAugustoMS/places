@@ -7,6 +7,9 @@ export const ListContainer = styled.section`
   flex-direction: center;
   justify-content: center;
   padding: 50px 0;
+
+  @media (max-width: 768px) {
+  }
 `;
 
 export const ListContent = styled.div`
@@ -16,4 +19,8 @@ export const ListContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: initial;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
