@@ -1,0 +1,20 @@
+{
+  "places": [
+    {
+      "country": "CM",
+      "local": "losangeles",
+      "meta": "23/2045",
+      "flag": "https://flagcdn.com/cm.svg",
+      "name": "Cameroon",
+      "id": 1
+    },
+    {
+      "country": "AL",
+      "local": "bahams las",
+      "meta": "33/4423",
+      "flag": "https://flagcdn.com/al.svg",
+      "name": "Albania",
+      "id": 2
+    }
+  ]
+}
