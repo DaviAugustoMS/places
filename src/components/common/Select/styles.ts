@@ -7,7 +7,10 @@ interface IProps {
 export const SelectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const SelectLabel = styled.label`

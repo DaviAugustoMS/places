@@ -8,7 +8,10 @@ interface IInputProps {
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const InputLabel = styled.label`
@@ -19,7 +22,7 @@ export const InputLabel = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 405px;
+  width: 385px;
   height: 48px;
   border: none;
   border-radius: 7px;

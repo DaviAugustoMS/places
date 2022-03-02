@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FormContainer = styled.section`
   width: 100%;
-  height: 203px;c
+  height: 203px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,9 +11,8 @@ export const FormContainer = styled.section`
   @media (max-width: 768px) {
     height: 363px;
     justify-content: center;
-  align-items: center;
-  display: flex;
-
+    align-items: center;
+    display: flex;
   }
 `;
 
