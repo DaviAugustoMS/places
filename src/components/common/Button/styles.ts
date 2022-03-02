@@ -10,7 +10,7 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    max-width: 100%;
+    max-width: 90%;
   }
 `;
 

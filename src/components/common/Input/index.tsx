@@ -1,5 +1,12 @@
 import InputMask from "react-input-mask";
-import { InputContainer, InputLabel, Input, MaskInput } from "./styles";
+import {
+  InputContainer,
+  InputLabel,
+  Input,
+  MaskInput,
+  InputContent,
+  InputMaskContent,
+} from "./styles";
 
 interface InputProps {
   label: string;
@@ -25,23 +32,27 @@ const InputComponent = ({
     <InputContainer>
       <InputLabel>{label}</InputLabel>
       {textLabel === "local" ? (
-        <Input
-          placeholder={placeholder}
-          onChange={(text) =>
-            setValue({ ...state, [textLabel]: text.target.value })
-          }
-          width={width}
-          value={value}
-        />
+        <InputContent>
+          <Input
+            placeholder={placeholder}
+            onChange={(text) =>
+              setValue({ ...state, [textLabel]: text.target.value })
+            }
+            width={width}
+            value={value}
+          />
+        </InputContent>
       ) : (
-        <MaskInput
-          placeholder={placeholder}
-          mask="99/9999"
-          value={value}
-          onChange={(text) =>
-            setValue({ ...state, [textLabel]: text.target.value })
-          }
-        />
+        <InputMaskContent>
+          <MaskInput
+            placeholder={placeholder}
+            mask="99/9999"
+            value={value}
+            onChange={(text) =>
+              setValue({ ...state, [textLabel]: text.target.value })
+            }
+          />
+        </InputMaskContent>
       )}
     </InputContainer>
   );

@@ -25,7 +25,7 @@ export const FormContent = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: 303px;
     width: 90%;
   }

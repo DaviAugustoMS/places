@@ -24,7 +24,6 @@ export const SelectContent = styled.div`
   height: 48px;
   border: none;
   border-radius: 7px;
-  padding: 0 16px;
   background: #ffffff;
 
   @media (max-width: 768px) {
@@ -32,7 +31,6 @@ export const SelectContent = styled.div`
   }
 `;
 export const Select = styled.select<IProps>`
-  width: 263px;
   height: 48px;
   border: none;
   appearance: none;
@@ -41,9 +39,8 @@ export const Select = styled.select<IProps>`
   background: url(${myImage}) no-repeat center right #fff;
   outline: none;
   color: ${({ color }) => color};
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+  margin: 0 16px;
+  width: 90%;
 `;
 
 export const SelectOption = styled.option``;

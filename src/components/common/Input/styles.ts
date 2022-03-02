@@ -21,14 +21,34 @@ export const InputLabel = styled.label`
   color: #ffffff;
 `;
 
-export const Input = styled.input`
+export const InputContent = styled.div`
   width: 385px;
   height: 48px;
   border: none;
   border-radius: 7px;
-  padding: 0 16px;
+  background: #ffffff;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const Input = styled.input`
+  width: 305px;
+  height: 46px;
+  border: none;
+  border-radius: 7px;
   outline: none;
   text-transform: capitalize;
+  padding-left: 16px;
+`;
+
+export const InputMaskContent = styled.div`
+  width: 210px;
+  height: 48px;
+  border: none;
+  border-radius: 7px;
+  background: #ffffff;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -37,13 +57,10 @@ export const Input = styled.input`
 
 export const MaskInput = styled(InputMask)`
   width: 150px;
-  height: 48px;
+  height: 46px;
   border: none;
   border-radius: 7px;
-  padding: 0 16px;
-  outline: none;
 
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+  padding-left: 16px;
+  outline: none;
 `;
