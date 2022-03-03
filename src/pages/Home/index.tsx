@@ -26,7 +26,7 @@ const Home = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const arr: any = [];
     countries.filter((item: any) => {
       if (item.alpha2Code === formCountry.country) {
@@ -41,7 +41,7 @@ const Home = () => {
     });
 
     try {
-      axios.post(DEFAULT_API_URLS.PLACES, ...arr);
+      await axios.post(`${DEFAULT_API_URLS.PLACES}places`, ...arr);
 
       setIsReloading(true);
       setFormCountry({
@@ -54,10 +54,11 @@ const Home = () => {
     }
   };
 
-  const handleEdit = (item: any) => {
+  const handleEdit = async (item: any) => {
     if (item.local !== "" && item.meta !== "") {
       try {
-        axios.put(`${DEFAULT_API_URLS.PLACES}/${item.id}`, item);
+        await axios.put(`${DEFAULT_API_URLS.PLACES}places/${item._id}`, item);
+
         setIsModal(false);
         setIsReloading(true);
       } catch (error: any) {
@@ -71,18 +72,23 @@ const Home = () => {
     setIsModal(true);
   };
 
-  const handleDelete = (item: any) => {
+  const handleDelete = async (item: any) => {
+    console.log("error", item);
+
     try {
-      axios.delete(`${DEFAULT_API_URLS.PLACES}/${item}`);
+      await axios.delete(`${DEFAULT_API_URLS.PLACES}places/${item}`);
+
       setIsReloading(true);
     } catch (error: any) {
+      console.log(error);
+
       throw new Error(error);
     }
   };
 
-  const handleChange = () => {
+  const handleChange = async () => {
     try {
-      axios.get(DEFAULT_API_URLS.PLACES).then((res) => {
+      await axios.get(`${DEFAULT_API_URLS.PLACES}`).then((res) => {
         setList(res.data);
       });
     } catch (error: any) {

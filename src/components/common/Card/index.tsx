@@ -57,7 +57,9 @@ const CardCompontent = ({
             </CardButton>
           )}
           <CardButton
-            onClick={() => (!modal ? handleDelete(item.id) : setIsModal(false))}
+            onClick={() =>
+              !modal ? handleDelete(item._id) : setIsModal(false)
+            }
           >
             <CloseIcon style={{ color: "#868686", fontSize: 22 }} />
           </CardButton>
