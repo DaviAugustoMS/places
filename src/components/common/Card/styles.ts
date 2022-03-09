@@ -86,6 +86,7 @@ export const CardInput = styled.input`
   text-transform: capitalize;
   padding: 0 16px;
   outline: none;
+  width: 140px;
 `;
 
 export const CardInputData = styled(InputMask)`
@@ -93,4 +94,6 @@ export const CardInputData = styled(InputMask)`
   border-bottom: 1px solid #ababab50;
   padding: 0 16px;
   outline: none;
+  width: 140px;
+  margin-left: 4px;
 `;

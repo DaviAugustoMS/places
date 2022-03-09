@@ -13,7 +13,7 @@ export const ListContainer = styled.section`
   }
 `;
 
-export const ListContent = styled.div`
+export const ListContent = styled.div.attrs({})`
   width: 100%;
   max-width: 1140px;
   height: 100%;
